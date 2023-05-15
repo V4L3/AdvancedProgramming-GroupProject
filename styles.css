@@ -1,0 +1,71 @@
+/* Custom CSS */
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .container.content {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .game-tile {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .game-tile:hover {
+    background-color: #f1f1f1;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
