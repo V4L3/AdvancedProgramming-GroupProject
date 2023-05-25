@@ -2,8 +2,10 @@
 let currentPlayer = "x";
 let gameBoard = document.querySelector(".board");
 let squares = document.querySelectorAll(".square");
+let currentPlayerElement = document.getElementById("current-player");
+let gameStatusElement = document.getElementById("game-status");
+let newGameButton = document.getElementById("new-game-button");
 
-console.log(squares);
 
 // Loop through each square and add a click event listener
 squares.forEach((square) => {
@@ -16,24 +18,32 @@ squares.forEach((square) => {
     // Add the current player's symbol to the square
     square.classList.add(currentPlayer);
 
+    // Update current player display
+    currentPlayerElement.textContent = currentPlayer.toUpperCase();
+
     // Check for a win or tie
     squares = document.querySelectorAll(".square");
     if (checkWin()) {
-      setTimeout(() => {
-        alert(`${currentPlayer} wins!`);
-        resetGame();
-      }, 300);
+      gameStatusElement.textContent = `${currentPlayer} wins!`;
+      disableClicks();
     } else if (checkTie()) {
-      setTimeout(() => {
-        alert("Tie game!");
-        resetGame();
-      }, 300);
+      gameStatusElement.textContent = "Tie game!";
+      disableClicks();
     } else {
       // Switch to the other player's turn
       currentPlayer = currentPlayer === "x" ? "o" : "x";
     }
   });
 });
+
+// Handle new game button click event
+newGameButton.addEventListener("click", () => {
+  resetGame();
+});
+
+function disableClicks(){
+  newGameButton.style.display = "block";
+}
 
 // Check for a win by comparing each possible winning combination
 function checkWin() {
@@ -76,4 +86,12 @@ function resetGame() {
 
   // Set the current player back to "x"
   currentPlayer = "x";
+
+  // Update current player display
+  currentPlayerElement.textContent = currentPlayer.toUpperCase();
+
+  // Clear game status
+  gameStatusElement.textContent = "";
+
+  newGameButton.style.display = "none";
 }

@@ -50,6 +50,7 @@
   </header>
 
   <main>
+    <h2 class="text-center text-2xl font-semibold mb-4">Current Turn: <span id="current-player">X</span></h2>
     <div class="flex items-center justify-center">
       <div class="container">
         <div class="board">
@@ -73,6 +74,10 @@
     </div>
   </main>
 
+  <div class="sidebar">
+    <div id="game-status" class="text-center text-2xl font-semibold mb-4"></div>
+    <button id="new-game-button" style="display: none;" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Start new game</button>
+  </div>
 
   <footer
     class="fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
