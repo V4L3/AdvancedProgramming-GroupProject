@@ -11,7 +11,7 @@ Course: Skills – Programming with Advanced Computer Languages
 
 Professor: Prof. Dr. Mario Silic
 
-Submission Date: May 28, 2023
+Submission Date: May 26, 2023
 
 Summary: The project focuses on developing a Game Center that offers 3 different games: Tic Tac Toe, Connect Four and Hangman. The implementation of the games utilizes HTML, CSS, and JavaScript as well as some UI components from [flowbite](https://flowbite.com/#components).
 
