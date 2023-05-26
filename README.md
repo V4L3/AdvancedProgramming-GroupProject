@@ -13,7 +13,7 @@ Professor: Prof. Dr. Mario Silic
 
 Submission Date: May 28, 2023
 
-Summary: The project focuses on developing a Game Center that offers 4 different games: Tic Tac Toe, Connect Four, Hangman, and an additional game. The implementation of the games utilizes HTML, CSS, and JavaScript as well as some UI components from [flowbite](https://flowbite.com/#components).
+Summary: The project focuses on developing a Game Center that offers 3 different games: Tic Tac Toe, Connect Four and Hangman. The implementation of the games utilizes HTML, CSS, and JavaScript as well as some UI components from [flowbite](https://flowbite.com/#components).
 
 ## 1) Project description
 
@@ -31,7 +31,7 @@ For those looking for a competitive two-player game, Connect Four is available. 
 
 The Game Center project is hosted at [https://v4l3.github.io/AdvancedProgramming-GroupProject/index.html](https://v4l3.github.io/AdvancedProgramming-GroupProject/index.html). Feel free to visit the hosted site to explore and play the games.
 
-If you want to localy run the project, simply clone the repository and oben the `index.html` file in the root folder.
+If you want to localy run the project, simply clone the repository and open the `index.html` file in the root folder.
 
 
 #### License
